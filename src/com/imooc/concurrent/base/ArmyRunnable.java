@@ -20,7 +20,7 @@ public class ArmyRunnable implements Runnable {
                 Thread.yield();
             }
 
-            System.out.println(Thread.currentThread().getName() + "结束了战斗！");
+            System.out.println(Thread.currentThread().getName() + "停止了战斗！");
 
         }
     }
