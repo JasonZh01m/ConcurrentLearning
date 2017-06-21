@@ -10,7 +10,10 @@ public class LongIncrementThread implements Runnable {
 
     @Override
     public void run() {
-        count++;
-        System.out.println(count);
+        synchronized (LongIncrementThread.class) {
+            count++;
+
+            System.out.println(count);
+        }
     }
 }
